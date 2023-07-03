@@ -1,0 +1,474 @@
+/* -----------------------------footer and nav---------------------------------- */
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+
+/* colores */
+
+:root {
+    --color_letra: rgba(62, 182, 232, 1);
+    --blanco: #fff;
+    --negro: rgba(0, 0, 0, 1);
+    --color_image: rgba(18, 17, 31, 1);
+    --gris: #888888;
+}
+
+
+/* header */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 10px 15px 0px var(--color_image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+nav img {
+    width: 80px;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-title {
+    width: 380px;
+    height: 30px;
+    text-align: center;
+}
+
+.logo-title h2 {
+    position: absolute;
+    color: var(--color_letra);
+    letter-spacing: 1px;
+    font-size: 30px;
+    top: 20px;
+}
+
+.logo-title h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color_letra);
+}
+
+.logo-title h2:nth-child(2) {
+    color: var(--color_image);
+    animation: logo 3s infinite;
+}
+
+
+/* animation Logo */
+
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    animation: responceMenu 2s ease;
+}
+
+
+.menu li {
+    list-style: none;
+    width: 100px;
+    text-align: center;
+}
+
+.active {
+    width: 100px;
+    box-shadow: -2px -17px 0px -11px var(--negro);
+}
+
+.menu li:hover {
+    box-shadow: 0px -5px 0px 0px var(--negro);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color_image);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    color: var(--color_letra);
+}
+
+
+
+/* --------------------------------------INDEX CONTENT --------------------------------- */
+.contenido-principal {
+    position: absolute;
+    top: 80px;
+    background-image: url("../img/generate\ a\ logo\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    filter: blur(7px);
+    width: 100%;
+    min-height: 500px;
+    max-height: 800px;
+}
+
+.principio {
+    width: 100%;
+    max-height: 800px;
+    min-height: 500px;
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.principio h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+}
+
+.principio p {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.pagotarjeta {
+    width: 100%;
+    height: 100%;
+    margin-top: 130px;
+    padding: 15px;
+}
+
+.pagotarjeta h2{
+    font-size: 35px;
+    padding: 10px 0px 20px 30px;
+}
+
+.service {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+
+
+.service section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    height: 450px;
+}
+
+.service section img {
+    width: 400px;
+    height: 250px;
+}
+
+.datos-service {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.datos-service2 {
+    display: grid;
+    place-items: center;
+    height: 80%;
+}
+
+.service button {
+    grid-column: 1/3;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 1px 10px 2px rgb(0, 0, 0);
+}
+
+@media (max-width: 550px) {
+    .service {
+        grid-template-columns: 1fr;
+
+    }
+
+    .service button {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+.min-menu {
+    border-top: 2px solid black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    width: 320px;
+}
+
+.min-menu .imagen img {
+    width: 100%;
+    height: 450px;
+}
+
+.min-menu .imagen h2 {
+    text-align: center;
+}
+
+.min-menu section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min-menu button {
+    font-size: 3rem;
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+    order: 5;
+}
+
+.min-menu button:hover {
+    font-weight: bold;
+    box-shadow: 0 1px 10px 3px rgb(0, 238, 255);
+    background-color: #fff;
+}
+
+
+/* -------------------------------------------ubicacion------------------ */
+
+.mapa {
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: -1;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* -------------------------------------footer--------------------------- */
+
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+footer h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.info-tekken {
+    width: 100%;
+    text-align: center;
+}
+
+.info-tekken h3 {
+    order: 100;
+}
+
+
+@keyframes logo {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes responceMenu {
+    from {
+        transform: translateX(-200px);
+    }
+}
+
+/* responce pag */
+
+
+/* menu */
+
+
+@media (max-width: 900px) {
+    .menu li {
+        box-shadow: none;
+        height: 50px;
+        padding-top: 20px;
+    }
+
+    .menu-response {
+        background-color: var(--blanco);
+        position: absolute;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        top: 80px;
+        left: 0;
+        align-items: center;
+        box-shadow: 7px 3px 5px 0px var(--color_letra);
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+.icon-menu .icon {
+    font-size: 40px;
+}
+
+@media (min-width: 900px) {
+    .icon-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo-title {
+        width: 300px;
+    }
+
+    .logo-title h2 {
+        font-size: 25px;
+    }
+
+    .contenido-principal {
+        background-image: url("../img/WhatsApp\ Image\ 2023-05-29\ at\ 8.26.29\ PM\ \(14\).jpeg");
+    }
+
+    .principio p {
+        text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    nav {
+        height: 100%;
+    }
+
+    .logo-title {
+        width: 200px;
+        height: 100%;
+    }
+
+    .logo-title h2 {
+        width: 200px;
+        height: 100%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .logo-title {
+        width: 150px;
+        height: 90px;
+    }
+
+    .logo-title h2 {
+        top: 5px;
+        width: 120px;
+    }
+}
+
+
+/* --------------------------------------menu-------------------------- */
+.menu-img {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-bottom: 150px;
+}
+
+.card-menu {
+    width: 300px;
+    text-align: center;
+    animation: cardimg 3s ease;
+    overflow: hidden;
+}
+
+.card-menu h2 {
+    text-transform: capitalize;
+}
+
+.card-menu img {
+    overflow: hidden;
+    width: 100%;
+    height: 430px;
+}
+
+@keyframes cardimg {
+
+    0%,
+    50% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
